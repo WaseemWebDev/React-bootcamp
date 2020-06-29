@@ -21,8 +21,8 @@ function Video() {
              </Col>
                 <Col lg={8}  >
                     <iframe className=" video shadow fluid" style={{height:"500px",width:"100%"}}  title="piac" src="https://www.youtube.com/embed/sfwvcpB8HyM"
-                        frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen>
+                        frameBorder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen>
 
                         </iframe>
 

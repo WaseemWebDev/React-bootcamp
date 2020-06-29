@@ -1,11 +1,15 @@
-import React from 'react';
+import React,{useEffect} from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import AOS from 'aos';
 import { makeStyles } from '@material-ui/core/styles';
 import ButtonBase from '@material-ui/core/ButtonBase';
 import Typography from '@material-ui/core/Typography';
 
-function ButtonImages() {
 
+function ButtonImages() {
+useEffect(()=>{
+    AOS.init();
+},[])
     const images = [
         {
             url: 'https://wallpapercave.com/wp/wp4923979.png',
@@ -101,11 +105,11 @@ function ButtonImages() {
     }));
     const classes = useStyles();
     return (
-        <Container fluid>
+        <Container fluid >
        
             <Row className=" justify-content-center">
             
-                <Col lg={9}  >
+                <Col lg={9} data-aos="fade-up"  data-aos-duration="1000" >
                 <h1>What We Will Learn</h1>
                 <br/>
                     <div className={classes.root}>

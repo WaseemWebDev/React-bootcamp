@@ -6,6 +6,8 @@ import ButtonImages from '../components/buttonImages/buttonImages';
 import Courses from '../components/courses/Courses';
 import Video from '../components/video/video';
 import TimelineSection from '../components/timeline/timeline';
+import Counters from '../components/numbers/numbers';
+import  Charts from '../components/charts/chart';
 export default function Home() {
     return (
         <>
@@ -18,6 +20,9 @@ export default function Home() {
             <Courses />
             <Video />
             <TimelineSection />
+            <Counters />
+           
+            <Charts />
         </>
     );
 }

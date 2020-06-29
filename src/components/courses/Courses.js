@@ -1,4 +1,4 @@
-import React from "react";
+import React,{useEffect} from "react";
 import { Container, Row, Col } from 'react-bootstrap';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
@@ -8,8 +8,13 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import AOS from 'aos';
+
 
 function Courses() {
+    useEffect(()=>{
+		AOS.init();
+		},[])
     const useStyles = makeStyles({
         root: {
             maxWidth: 500,
@@ -26,7 +31,7 @@ function Courses() {
             <br /> <br />
             <Row >
                 <Col lg={4} >
-                    <Card className={`shadow ${classes.root}`}>
+                    <Card data-aos="fade-left"  data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
@@ -55,7 +60,7 @@ function Courses() {
                 </Col>
                 
                 <Col lg={4} >
-                    <Card className={`shadow ${classes.root}`}>
+                    <Card data-aos="fade-right" data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
@@ -83,7 +88,7 @@ function Courses() {
                     </Card>
                 </Col>
                 <Col lg={4} >
-                    <Card className={`shadow ${classes.root}`}>
+                    <Card data-aos="slide-up" data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
