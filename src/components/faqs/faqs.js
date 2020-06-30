@@ -58,7 +58,7 @@ function Faqs() {
               </ExpansionPanelSummary>
               <ExpansionPanelDetails>
                 <Typography>
-                   It is easy to learn 
+                   It is easy to learn you just need to give time
                 </Typography>
               </ExpansionPanelDetails>
             </ExpansionPanel>
