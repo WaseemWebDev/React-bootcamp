@@ -35,7 +35,7 @@ function TimelineSection() {
       <center><h2>Timeline</h2></center>
       <br />
       <Row className="text-left  justify-content-center">
-        <Col lg={7}>
+        <Col lg={7}  xs={12}>
           <Timeline align="alternate">
             <TimelineItem>
               <TimelineOppositeContent>
@@ -51,7 +51,7 @@ function TimelineSection() {
                 <Paper elevation={3} className={classes.paper} data-aos="fade-left"  data-aos-duration="1000">
                   <Typography>
                     <img
-                      className="rounded"
+                      className="rounded timeline-img"
                       src="https://www.cloudways.com/blog/wp-content/uploads/Why-ReactJS-Should-be-a-Perfect-Choice-for-Your-Next-Front-end-Application-Banner.jpg"
                       fluid
                       height="200"
@@ -81,9 +81,10 @@ function TimelineSection() {
                 <Paper elevation={3} className={classes.paper} data-aos="fade-left"  data-aos-duration="1000">
                 <Typography>
                 <img
-                      className="rounded"
+                      className="rounded timeline-img"
                       src="https://gisgeography.com/wp-content/uploads/2016/03/gis-programming-in-python.png"
                       fluid
+                     
                       height="200"
                       alt="reactjs"
                     />
@@ -108,7 +109,7 @@ function TimelineSection() {
                 <Paper elevation={3} className={classes.paper} data-aos="fade-right"  data-aos-duration="1000">
                 <Typography>
                 <img
-                      className="rounded"
+                      className="rounded timeline-img"
                       src="https://i.dlpng.com/static/png/4298969-sleep-scene-vector-hand-computer-boy-png-and-vector-for-free-computer-boy-png-650_672_preview.webp"
                       fluid
                       height="200"
@@ -133,7 +134,7 @@ function TimelineSection() {
                 <Paper elevation={3} className={classes.paper} data-aos="fade-right"  data-aos-duration="1000">
                 <Typography>
                 <img
-                      className="rounded"
+                      className="rounded timeline-img"
                       src="https://img.freepik.com/free-vector/programmer-s-workplace-writing-code-laptop_80328-238.jpg?size=626&ext=jpg"
                       fluid
                       height="200"

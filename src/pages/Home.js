@@ -8,6 +8,7 @@ import Video from '../components/video/video';
 import TimelineSection from '../components/timeline/timeline';
 import Counters from '../components/numbers/numbers';
 import  Charts from '../components/charts/chart';
+import Faqs from '../components/faqs/faqs';
 export default function Home() {
     return (
         <>
@@ -21,8 +22,8 @@ export default function Home() {
             <Video />
             <TimelineSection />
             <Counters />
-           
             <Charts />
+            <Faqs />
         </>
     );
 }

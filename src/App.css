@@ -32,3 +32,14 @@ nav .nav-link:focus,
   .numbers{
       font-size:45px;
   }
+  @media only screen and (max-width: 780px) {
+    .timeline-img{
+    width:200px;
+    height: 100px;
+    }
+  }
+  .faq-img{
+      height: 500px;
+      width:100%;
+  }
+  

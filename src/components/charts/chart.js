@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import AOS from "aos";
 import { Pie } from "react-chartjs-2";
@@ -18,11 +18,11 @@ const data = {
 };
 
 const Charts = () => {
-	useEffect(()=>{
-		AOS.init();
-		},[])
+  useEffect(() => {
+    AOS.init();
+  }, [])
   return (
-    <Container>
+    <Container className="bg-light">
       <br />
       <center>
         <h2>Charts</h2>
@@ -34,12 +34,13 @@ const Charts = () => {
           lg={6}
           data-aos="fade-right"
           data-aos-duration="1000"
-         
+
         >
+         <h4>Pie chart</h4>
           <Pie height={170} data={data} />
         </Col>
         <Col lg={6}
-		 data-aos="fade-left"
+          data-aos="fade-left"
           data-aos-duration="1000">
           <LineChart />
         </Col>

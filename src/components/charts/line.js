@@ -32,7 +32,7 @@ export default function LineChart(){
  
     return (
       <>
-        <h2>Line Example</h2>
+        <h4>Line chart</h4>
         <Line data={data} />
         </>
       
