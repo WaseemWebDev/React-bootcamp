@@ -30,7 +30,7 @@ function TimelineSection() {
   }));
   const classes = useStyles();
   return (
-    <Container fluid className="bg-light">
+    <Container fluid  className="bg-light">
       <br />
       <center><h2>Timeline</h2></center>
       <br />

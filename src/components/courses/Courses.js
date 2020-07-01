@@ -26,7 +26,7 @@ function Courses() {
     });
     const classes = useStyles();
     return (
-        <Container fluid className=" p-5 " style={{borderRadius:"23% 18% 0% 0% / 10% 10% 10% 10% ",backgroundColor:"#1976D2"}} >
+        <Container fluid className=" p-5 " style={{borderRadius:"23% 18% 0% 0% / 10% 10% 10% 10% ",background:'linear-gradient(180deg,#1867c0,#5cbbf6)'}} >
             <center><h1 className="text-white">Courses We Offer</h1></center>
             <br /> <br />
             <Row >

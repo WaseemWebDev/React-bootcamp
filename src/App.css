@@ -20,6 +20,10 @@ nav .nav-link:focus,
     color: yellow;
 }
 
+ .navbar-brand:focus, .navbar-brand:hover{
+    color:yellow !important;
+}
+
 .card-row {
     margin-top: -100px;
 }
@@ -37,9 +41,22 @@ nav .nav-link:focus,
     width:200px;
     height: 100px;
     }
+    .faq-img{
+        height: 250px !important;
+        width:100%;
+    }
   }
   .faq-img{
       height: 500px;
       width:100%;
   }
+  .github{
+      color:white;
+    
+      
+  }
+  .github:hover{
+     color:green;
+  }
+  
   
