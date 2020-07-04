@@ -17,10 +17,10 @@ function App() {
     <Route exact path="/"
        component={Home}
     />
-    <Route  path="/about"
+    <Route exact  path="/about"
        component={About}
     />
-     <Route  path="/contact"
+     <Route exact path="/contact"
        component={Contact}
     />
       
