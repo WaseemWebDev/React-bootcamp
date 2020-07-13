@@ -32,7 +32,7 @@ function Courses() {
             <br /> <br />
             <Row  className="justify-content-center">
                 <Col lg={4} sm={6} >
-                    <Card data-aos="fade-left"  data-aos-duration="1000" className={`shadow ${classes.root}`}>
+                    <Card data-aos="fade-in"  data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
@@ -61,7 +61,7 @@ function Courses() {
                 </Col>
                 
                 <Col lg={4} sm={6} >
-                    <Card data-aos="fade-right" data-aos-duration="1000" className={`shadow ${classes.root}`}>
+                    <Card data-aos="fade-in" data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
@@ -89,7 +89,7 @@ function Courses() {
                     </Card>
                 </Col>
                 <Col lg={4} sm={6} >
-                    <Card data-aos="slide-up" data-aos-duration="1000" className={`shadow ${classes.root}`}>
+                    <Card data-aos="fade-in" data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
                                 className={classes.media}
