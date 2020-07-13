@@ -1,4 +1,4 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { makeStyles } from "@material-ui/core/styles";
 import Timeline from "@material-ui/lab/Timeline";
@@ -17,9 +17,9 @@ import Typography from "@material-ui/core/Typography";
 import AOS from 'aos';
 
 function TimelineSection() {
-  useEffect(()=>{
+  useEffect(() => {
     AOS.init();
-},[])
+  }, [])
   const useStyles = makeStyles((theme) => ({
     paper: {
       padding: "6px 16px",
@@ -30,16 +30,16 @@ function TimelineSection() {
   }));
   const classes = useStyles();
   return (
-    <Container fluid  className="bg-light">
+    <Container fluid className="bg-light">
       <br />
       <center><h2>Timeline</h2></center>
       <br />
       <Row className="text-left  justify-content-center">
-        <Col lg={7}  xs={12}>
+        <Col lg={7} sm={10} xs={12}>
           <Timeline align="alternate">
             <TimelineItem>
               <TimelineOppositeContent>
-               
+
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot>
@@ -48,7 +48,7 @@ function TimelineSection() {
                 <TimelineConnector />
               </TimelineSeparator>
               <TimelineContent>
-                <Paper elevation={3} className={classes.paper} data-aos="fade-left"  data-aos-duration="1000">
+                <Paper elevation={3} className={classes.paper} data-aos="fade-top" data-aos-duration="1000">
                   <Typography>
                     <img
                       className="rounded timeline-img"
@@ -69,7 +69,7 @@ function TimelineSection() {
             </TimelineItem>
             <TimelineItem>
               <TimelineOppositeContent>
-               
+
               </TimelineOppositeContent>
               <TimelineSeparator>
                 <TimelineDot color="primary">
@@ -77,21 +77,23 @@ function TimelineSection() {
                 </TimelineDot>
                 <TimelineConnector />
               </TimelineSeparator>
+
               <TimelineContent>
-                <Paper elevation={3} className={classes.paper} data-aos="fade-left"  data-aos-duration="1000">
-                <Typography>
-                <img
+                <br /><br />
+                <Paper elevation={3} className={classes.paper} data-aos="fade-in" data-aos-duration="1000">
+                  <Typography>
+                    <img
                       className="rounded timeline-img"
                       src="https://gisgeography.com/wp-content/uploads/2016/03/gis-programming-in-python.png"
                       fluid
-                     
+
                       height="200"
                       alt="reactjs"
                     />
-                    </Typography>
+                  </Typography>
                   <Typography variant="h6" component="h1">
-                 
-                  
+
+
                     Code
                   </Typography>
                   <Typography>Because it&apos;s awesome!</Typography>
@@ -106,18 +108,19 @@ function TimelineSection() {
                 <TimelineConnector className={classes.secondaryTail} />
               </TimelineSeparator>
               <TimelineContent>
-                <Paper elevation={3} className={classes.paper} data-aos="fade-right"  data-aos-duration="1000">
-                <Typography>
-                <img
+                <br /><br />
+                <Paper elevation={3} className={classes.paper} data-aos="zoom-in" data-aos-duration="1000">
+                  <Typography>
+                    <img
                       className="rounded timeline-img"
                       src="https://i.dlpng.com/static/png/4298969-sleep-scene-vector-hand-computer-boy-png-and-vector-for-free-computer-boy-png-650_672_preview.webp"
                       fluid
                       height="200"
                       alt="reactjs"
                     />
-                </Typography>
+                  </Typography>
                   <Typography variant="h6" component="h1">
-                  
+
                     Sleep
                   </Typography>
                   <Typography>Because you need rest</Typography>
@@ -131,17 +134,19 @@ function TimelineSection() {
                 </TimelineDot>
               </TimelineSeparator>
               <TimelineContent>
-                <Paper elevation={3} className={classes.paper} data-aos="fade-right"  data-aos-duration="1000">
-                <Typography>
-                <img
+                <br /><br />
+                <Paper elevation={3} className={classes.paper} data-aos="fade-down" data-aos-duration="1000">
+
+                  <Typography>
+                    <img
                       className="rounded timeline-img"
                       src="https://img.freepik.com/free-vector/programmer-s-workplace-writing-code-laptop_80328-238.jpg?size=626&ext=jpg"
                       fluid
                       height="200"
                       alt="reactjs"
                     />
-                
-                </Typography>
+
+                  </Typography>
                   <Typography variant="h6" component="h1">
                     Repeat
                   </Typography>

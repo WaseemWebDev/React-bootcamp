@@ -29,18 +29,18 @@ const Charts = () => {
       </center>
       <br />
       <br />
-      <Row className="numbers  text-center">
+      <Row className="numbers justify-content-center  text-center">
         <Col
-          lg={6}
-          data-aos="fade-right"
+          lg={6} sm={8} xs={10}
+          data-aos="zoom-in"
           data-aos-duration="1000"
 
         >
          <h4>Pie chart</h4>
           <Pie height={170} data={data} />
         </Col>
-        <Col lg={6}
-          data-aos="fade-left"
+        <Col lg={6} sm={8} xs={10}
+          data-aos="zoom-in"
           data-aos-duration="1000">
           <LineChart />
         </Col>

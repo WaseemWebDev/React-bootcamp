@@ -14,7 +14,8 @@ import AOS from 'aos';
 function Courses() {
     useEffect(()=>{
 		AOS.init();
-		},[])
+        },[])
+        
     const useStyles = makeStyles({
         root: {
             maxWidth: 500,
@@ -26,11 +27,11 @@ function Courses() {
     });
     const classes = useStyles();
     return (
-        <Container fluid className=" p-5 " style={{borderRadius:"23% 18% 0% 0% / 10% 10% 10% 10% ",background:'linear-gradient(180deg,#1867c0,#5cbbf6)'}} >
+        <Container fluid className=" p-4  "  style={{borderRadius:"23% 18% 0% 0% / 10% 10% 10% 10% ",background:'linear-gradient(180deg,#1867c0,#5cbbf6)'}} >
             <center><h1 className="text-white">Courses We Offer</h1></center>
             <br /> <br />
-            <Row >
-                <Col lg={4} >
+            <Row  className="justify-content-center">
+                <Col lg={4} sm={6} >
                     <Card data-aos="fade-left"  data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
@@ -59,7 +60,7 @@ function Courses() {
                     </Card>
                 </Col>
                 
-                <Col lg={4} >
+                <Col lg={4} sm={6} >
                     <Card data-aos="fade-right" data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
@@ -87,7 +88,7 @@ function Courses() {
                         </CardActions>
                     </Card>
                 </Col>
-                <Col lg={4} >
+                <Col lg={4} sm={6} >
                     <Card data-aos="slide-up" data-aos-duration="1000" className={`shadow ${classes.root}`}>
                         <CardActionArea>
                             <CardMedia
